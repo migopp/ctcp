@@ -1,7 +1,5 @@
 // client.c
 //
-// TCP Client
-//
 // Connects to the TCP server and makes requests.
 
 #include <arpa/inet.h>

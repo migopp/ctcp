@@ -1,19 +1,14 @@
-# Compiler
 CCOMP		= clang
 CFLAGS		= -std=c99 -Wall -Wextra -g
 
-# Directories
 LIB_DIR		= lib
 SRC_DIR		= .
 TARGET_DIR	= target
 
-
-# Source
 LIB_SRC		= $(wildcard $(LIB_DIR)/*.c)
 CLIENT_SRC 	= $(SRC_DIR)/client.c
 SERVER_SRC 	= $(SRC_DIR)/server.c
 
-# Targets
 CLIENT	= $(TARGET_DIR)/client
 SERVER	= $(TARGET_DIR)/server
 

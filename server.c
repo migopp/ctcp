@@ -1,7 +1,5 @@
 // server.c
 //
-// TCP Server
-//
 // Opens a stream socket, then listens on it and serves
 // client requests.
 

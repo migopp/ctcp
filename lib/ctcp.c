@@ -35,8 +35,8 @@ int hello_from(int fd, char *place) {
 	char buf[50];
 	bzero(buf, 50);
 	snprintf(buf, 50, "Hello from %s!", place);
-	int status = send(fd, buf, strlen(buf), 0);
-	if (status == -1) {
+	ssize_t nbytes = send(fd, buf, strlen(buf), 0);
+	if (nbytes == -1) {
 		perror("`hello_from` send failure");
 		return CTCP_CHECK_ERRNO;
 	}
